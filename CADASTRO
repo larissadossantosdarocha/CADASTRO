@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro o Pet</title>
+</head>
+<body>
+    <h1>Cadastro do Pet</h1>
+
+    <fieldset>
+        <legend>Dados do Pet</legend>
+
+        <label for="dados">Pet</label>
+        <select id="dados">
+
+        <option>Cachorro</option>
+        <option>Gato</option>
+        <option>Peixe</option>
+        <option>Pássaro</option>
+       
+        
+        </select>
+
+        <p></p>
+
+        <label for="Nome">Nome</label>
+        <input type="dados" id="Nome" name="dados">
+
+        <p></p>
+
+        <label for="dados">Idade</label>
+        <input type="number" id="Idade" name="dados">
+
+        <p></p>
+
+        <label for="dados">Raça</label>
+        <input type="dados" id="Raça" name="dados">
+
+        <p></p>
+
+        <label for="dados">Nascimento</label>
+        <input type="date" id="Nascimento" name="dados">
+
+        <p></p>
+        <label for="dados">Possui algum problema de saúde?</label>
+        <br>
+        
+         <input type="radio" id="sim" name="dados">
+        <label for="sim">Sim</label>
+                
+        <input type="radio" id="nao" name="dados">
+        <label for="nao">Não</label>
+
+        <p></p>
+
+        <label for="dados">Qual?</label>
+        <input type="dados" id="qual" name="dados">
+
+        <p></p>
+
+        <label for="dados">Nome do(a) Dono(a)</label>
+        <input type="dados" id="dono" name="dados">
+
+        <p></p>
+
+        <label for="dados">CPF</label>
+        <input type="number" id="CPF" name="dados">
+
+        <p></p>
+
+        <label for="dados">Telefone para contato</label>
+        <input type="number" id="tel" name="dados">
+
+        <p></p>
+
+        </fieldset>
+       
+     
+
+        
+    <br>
+    <br>
+
+    <button type="button" onclick="Enviar()">Enviar</button></a>
+
+    <a href="file:///C:/Users/Desenvolvimento/Documents/TCC/HTML1/Entrar.html"><button type="button" onclick="entrar()">Entrar</button></a>
+
+    <style>
+    body{
+    background: rgb(192, 240, 255);
+    }
+    input{
+    width: 9%;
+    height: 100%;
+    border-radius: 1px;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
+    }
+    button{
+    width: 9%;
+    height: 100%;
+    border-radius: 1px;
+    border-color: black;
+    padding: 5px;
+    margin: 5px;
+    }
+    </style>
+
+    <script>
+        function Enviar() {
+  var dados = document.getElementById('dados').value;
+  var Nome,tel = document.getElementById('Nome,tel').value;
+  var idade,dono = document.getElementById('idade,dono').value;
+  var Raça,CPF = document.getElementById('Raça,cpf').value;
+  var Nascimento = document.getElementById('Nascimento').value;
+
+  if (dados,Nome,Nascimento,tel,CPF,dono,idade,Raça.trim() === "") {
+    window.alert("Campo vazio");
+    document.getElementById('dados,Nome,Nascimento,tel,CPF,dono,idade,Raça').value;
+  } else {
+    window.alert("Pet cadastrado com sucesso!");
+  }
+}
+    </script>
+    
+    
+</body>
+</html>
